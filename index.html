@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharath Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/60e921009f.js" crossorigin="anonymous"></script>
+
+  <!-- SEO & Branding -->
+  <meta name="description" content="Bharath's Portfolio - Java Full Stack Developer skilled in Spring Boot, React.js, MySQL, and UI/UX.">
+  <meta name="keywords" content="Java, Spring Boot, React, MySQL, Full Stack Developer, Portfolio, Web Development, App Development">
+  <meta name="author" content="Bharath S">
+</head>
+<body>
+  <!-- ------------------ Header ------------------ -->
+  <div id="header">
+    <div class="container">
+      <nav>
+<div class="logo-text">Bharath</div>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <h1>Hi, I'm <span>Bharath</span></h1>
+        <p>Java Full Stack Developer | React.js • Spring Boot • MySQL</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------ About ------------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="Bharath Profile Picture">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            I'm a passionate <b>Java Full Stack Developer</b> skilled in building scalable web applications with 
+            <b>Spring Boot, React.js, and MySQL</b>. I enjoy designing user-friendly interfaces, 
+            creating efficient backend systems, and delivering clean, maintainable code.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Building scalable Web Applications</li>
+              <li><span>App Development</span><br>Android app development using Java</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Jan 2025 - Apr 2025</span><br>Java Full Stack Developer Intern - Built Cinema Ticket Booking System </li>
+              <li><span>Feb 2023 - Mar 2023</span><br>Internship Project - News Website, API Integration</li>
+              <li><span>Apr 2022 - Jun 2022</span><br>Internship Project - Sound Wave Fire-Extinguisher</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021 - 2025</span><br>NMAM Institute of Technology, Nitte - B.E. CSE</li>
+              <li><span>2019 - 2021</span><br>St. Theresa PU College, Bengaluru</li>
+              <li><span>2016 - 2019</span><br>Trishul High School</li>
+              <li><span>2014 - 2016</span><br>Bala Bharathi Primary School, Bellary</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------ Services ------------------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="serviceslist">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            I create responsive, fast, and user-friendly websites that reflect your brand.  
+            <br><br><b>What I offer:</b>
+          </p>
+          <ul>
+            <li>Responsive design (mobile/tablet/desktop)</li>
+            <li>Custom layouts & branding</li>
+            <li>Secure and fast performance</li>
+            <li>Website redesigns</li>
+            <li>Modern UI/UX</li>
+          </ul>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>Java Application Development</h2>
+          <p>
+            I build scalable and high-performance Java applications, from desktop tools to enterprise-level systems.  
+            <br><br><b>What I offer:</b>
+          </p>
+          <ul>
+            <li>Custom Java software development</li>
+            <li>Spring Boot backend development</li>
+            <li>REST API development</li>
+            <li>Integration with databases & APIs</li>
+          </ul>
+        </div>
+        <div>
+          <i class="fa-brands fa-android"></i>
+          <h2>Android App Development</h2>
+          <p>
+            I create Android apps using Java that are user-friendly and optimized.  
+            <br><br><b>What I offer:</b>
+          </p>
+          <ul>
+            <li>Native Android apps with Java</li>
+            <li>UI/UX for mobile interfaces</li>
+            <li>Integration with Firebase & APIs</li>
+            <li>Google Play deployment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------ Portfolio ------------------ -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/Image_1.jpeg" alt="Cinema Ticket Booking Project">
+          <div class="layer">
+            <h3>Cinema Ticket Booking</h3>
+            <p>Full-stack web app with seat booking, session management, and payment system built using React & Spring Boot.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Image_2.webp" alt="Hospital Management System">
+          <div class="layer">
+            <h3>Hospital Management System</h3>
+            <p>Web application to manage hospital patients, doctors, and billing using PHP & SQL Server.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Image_3.png" alt="Student Result Management">
+          <div class="layer">
+            <h3>Student Result Management</h3>
+            <p>Python Tkinter app with SQLite database to manage student grades and generate reports.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ------------------ Contact ------------------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> bharathpsnab@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i> +91 9916606537</p>
+          <div class="socialicons">
+            <a href="https://www.linkedin.com/in/bharathpsnab/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/BharathS027"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/iambharath_27/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+          <!-- Resume Buttons -->
+<div class="resume-buttons">
+  <a href="Myresume.pdf" target="_blank" rel="noopener noreferrer" class="btn ">
+    View Resume
+  </a>
+  <a href="Myresume.pdf" download class="btn ">
+    Download Resume
+  </a>
+</div>
+
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Bharath. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+  <!-- ------------------ Scripts ------------------ -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){ sidemeu.style.right="0"; }
+    function closemenu(){ sidemeu.style.right="-200px"; }
+  </script>
+
+  <!-- Highlight menu while scrolling -->
+  <script>
+    window.addEventListener("scroll", () => {
+      let sections = document.querySelectorAll("div[id]");
+      let navLinks = document.querySelectorAll("nav ul li a");
+      sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+        if(top >= offset && top < offset + height){
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            document.querySelector("nav ul li a[href*=" + id + "]").classList.add("active");
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- Google Sheet Form -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBUCLrbQ8i5KXaQlCELRSu2xwnyMsrmEG7zFAgYR6qev7yl75dMOpEdvoVF8Rq0P1IYQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg=document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML="Message sent successfully ✅";
+          setTimeout(function(){ msg.innerHTML=""; },5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+</body>
+</html>
